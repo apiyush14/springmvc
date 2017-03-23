@@ -11,7 +11,10 @@ public class RegistrationController
  @RequestMapping(value="/register",method=RequestMethod.GET)
  public String getRegistration(Model model)
  {
-	model.addAttribute(new Spitter());
+	Spitter spitter=new Spitter();
+	spitter.setFirstName("Piyush");
+	spitter.setLastName("Arora");
+	model.addAttribute(spitter);
 	return "register"; 
  }
 }
