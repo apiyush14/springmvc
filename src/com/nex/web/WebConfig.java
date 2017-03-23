@@ -35,8 +35,8 @@ public class WebConfig extends WebMvcConfigurerAdapter{
 		return tiles;
 	}
 	
-	@Bean
+	/*@Bean
 	public ViewResolver viewResolver1() {
 	return new TilesViewResolver();
-	}
+	}*/
 }
