@@ -35,6 +35,15 @@ public class WebConfig extends WebMvcConfigurerAdapter{
 		return tiles;
 	}
 	
+	@Bean
+	public Spitter getSpitter()
+	{
+		Spitter spitter=new Spitter();
+		spitter.setFirstName("Piyush");
+		spitter.setLastName("Arora");
+		return spitter;
+	}
+	
 	/*@Bean
 	public ViewResolver viewResolver1() {
 	return new TilesViewResolver();
