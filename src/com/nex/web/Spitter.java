@@ -1,10 +1,18 @@
 package com.nex.web;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 import org.springframework.stereotype.Component;
 
 @Component
 public class Spitter {
+	
+ @NotNull
+ @Size(min=5,max=10,message="First Name size not valid")
  public String firstName;
+ @NotNull
+ @Size(min=5,max=10,message="Last Name size not valid")
  public String lastName;
  public String email;
  public String username;

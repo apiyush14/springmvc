@@ -9,9 +9,10 @@
 </head>
 <body>
 <sf:form method="POST" commandName="spitter">
+<sf:errors path="*" element="div"></sf:errors>
 First Name : <sf:input path="firstName"/><br/>
 Last Name: <sf:input path="lastName" /><br/>
-Email: <sf:input path="email" /><br/>
+Email: <sf:input path="email"/><br/>
 Username: <sf:input path="username" /><br/>
 Password: <sf:password path="password" /><br/>
 <input type="submit" value="Register" />
