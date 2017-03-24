@@ -8,7 +8,7 @@
 <title>Registration</title>
 </head>
 <body>
-<sf:form method="POST" commandName="spitter">
+<sf:form action="doRegister" method="POST" commandName="spitter">
 <sf:errors path="*" element="div"></sf:errors>
 First Name : <sf:input path="firstName"/><br/>
 Last Name: <sf:input path="lastName" /><br/>

@@ -17,4 +17,10 @@ public class RegistrationController
 	model.addAttribute(spitter);
 	return "register"; 
  }
+ 
+ @RequestMapping(value="/doRegister",method=RequestMethod.POST)
+ public String register(Model model)
+ {
+	return "Your details are registered"; 
+ }
 }
