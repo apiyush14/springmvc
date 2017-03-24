@@ -21,6 +21,6 @@ public class RegistrationController
  @RequestMapping(value="/doRegister",method=RequestMethod.POST)
  public String register(Model model)
  {
-	return "Your details are registered"; 
+	return "doRegister"; 
  }
 }
