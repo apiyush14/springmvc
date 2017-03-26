@@ -6,19 +6,16 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-import org.thymeleaf.TemplateEngine;
-import org.thymeleaf.TemplateMode;
-import org.thymeleaf.spring3.SpringTemplateEngine;
-import org.thymeleaf.spring3.view.ThymeleafViewResolver;
-import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
-import org.thymeleaf.templateresolver.TemplateResolver;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
+import org.springframework.web.servlet.view.JstlView;
+import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
 
 @Configuration
 @EnableWebMvc
 @ComponentScan("com.nex.web")
 public class WebConfig extends WebMvcConfigurerAdapter{
 
-	/*@Bean(name="HelloWorld")
+	@Bean(name="HelloWorld")
 	public ViewResolver viewResolver()
 	{
 		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
@@ -35,9 +32,18 @@ public class WebConfig extends WebMvcConfigurerAdapter{
 		tiles.setDefinitions(new String[] {"/WEB-INF/layout/tiles.xml"});
 		tiles.setCheckRefresh(true);
 		return tiles;
-	}*/
+	}
 	
 	@Bean
+	public Spitter getSpitter()
+	{
+		Spitter spitter=new Spitter();
+		spitter.setFirstName("Piyush");
+		spitter.setLastName("Arora");
+		return spitter;
+	}
+	
+	/*@Bean
 	public ViewResolver viewResolver(SpringTemplateEngine templateEngine) 
 	{
 	ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
@@ -60,16 +66,9 @@ public class WebConfig extends WebMvcConfigurerAdapter{
 	templateResolver.setSuffix(".html");
 	templateResolver.setTemplateMode(TemplateMode.HTML5);
 	return templateResolver;
-	}
+	}*/
 	
-	@Bean
-	public Spitter getSpitter()
-	{
-		Spitter spitter=new Spitter();
-		spitter.setFirstName("Piyush");
-		spitter.setLastName("Arora");
-		return spitter;
-	}
+	
 	
 	/*@Bean
 	public ViewResolver viewResolver1() {
