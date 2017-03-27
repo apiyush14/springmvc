@@ -8,7 +8,7 @@ public class SpittrWebAppInitializer extends
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
 		// TODO Auto-generated method stub
-		return new Class<?>[] {WebConfig.class};
+		return new Class<?>[] {SecurityConfig.class};
 	}
 
 	@Override
