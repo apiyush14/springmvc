@@ -13,7 +13,7 @@ import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
 
 @Configuration
-@EnableWebMvcSecurity
+@EnableWebSecurity
 @ComponentScan("com.nex.web")
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
