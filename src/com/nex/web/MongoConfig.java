@@ -20,7 +20,7 @@ public class MongoConfig extends AbstractMongoConfiguration{
 	@Override
 	public Mongo mongo() throws Exception {
 		// TODO Auto-generated method stub
-		return new MongoClient();
+		return new MongoClient("localhost");
 	}
 
 
