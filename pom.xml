@@ -57,6 +57,11 @@
         	<version>1.10.1.RELEASE</version>
         	<scope>compile</scope>
         </dependency>
+        <dependency>
+        	<groupId>org.mongodb</groupId>
+        	<artifactId>mongo-java-driver</artifactId>
+        	<version>3.4.2</version>
+        </dependency>
     </dependencies>
  
     <build>
