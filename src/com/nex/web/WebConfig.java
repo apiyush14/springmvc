@@ -25,14 +25,14 @@ public class WebConfig extends WebMvcConfigurerAdapter{
 		return viewResolver;
 	}	
 	
-	@Bean
+	/*@Bean
 	public TilesConfigurer tilesConfigurer()
 	{
 		TilesConfigurer tiles = new TilesConfigurer();
 		tiles.setDefinitions(new String[] {"/WEB-INF/layout/tiles.xml"});
 		tiles.setCheckRefresh(true);
 		return tiles;
-	}
+	}*/
 	
 	@Bean
 	public Spitter getSpitter()
