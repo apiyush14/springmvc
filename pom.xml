@@ -86,6 +86,9 @@
                     <artifactId>maven-war-plugin</artifactId>
                     <version>2.4</version>
                     <configuration>
+                    <webAppConfig>
+                    <allowDuplicateFragmentNames>true</allowDuplicateFragmentNames>
+                    </webAppConfig>
                         <warSourceDirectory>WebContent</warSourceDirectory>
                         <warName>Spring4MVCHelloWorldNoXMLDemo</warName>
                         <failOnMissingWebXml>false</failOnMissingWebXml>
